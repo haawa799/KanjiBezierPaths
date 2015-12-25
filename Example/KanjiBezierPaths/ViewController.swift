@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    let pathes = KanjiBezierPathesHelper.pathesForKanji("上")
+    let pathes = KanjiBezierPathesHelper.pathesForKanji("辞")
     print(pathes)
   }
   
