@@ -1,0 +1,6 @@
+framework module Pods_KanjiBezierPaths_Example {
+  umbrella header "Pods-KanjiBezierPaths_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
