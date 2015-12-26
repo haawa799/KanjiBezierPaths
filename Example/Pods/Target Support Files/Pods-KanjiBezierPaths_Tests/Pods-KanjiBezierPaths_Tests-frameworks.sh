@@ -84,11 +84,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-KanjiBezierPaths_Tests/AWSQLiteDB.framework"
   install_framework "Pods-KanjiBezierPaths_Tests/KanjiBezierPaths.framework"
   install_framework "Pods-KanjiBezierPaths_Tests/Nimble.framework"
   install_framework "Pods-KanjiBezierPaths_Tests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-KanjiBezierPaths_Tests/AWSQLiteDB.framework"
   install_framework "Pods-KanjiBezierPaths_Tests/KanjiBezierPaths.framework"
   install_framework "Pods-KanjiBezierPaths_Tests/Nimble.framework"
   install_framework "Pods-KanjiBezierPaths_Tests/Quick.framework"

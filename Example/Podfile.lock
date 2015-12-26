@@ -1,5 +1,7 @@
 PODS:
-  - KanjiBezierPaths (0.1.0)
+  - AWSQLiteDB (0.1.2)
+  - KanjiBezierPaths (0.1.0):
+    - AWSQLiteDB
   - Nimble (3.0.0)
   - Quick (0.8.0)
 
@@ -13,7 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KanjiBezierPaths: 3cd4278db5b04f6628eb9005109a70093c831056
+  AWSQLiteDB: 233c76f09d185268b77102860e4435773e93dbc1
+  KanjiBezierPaths: ea25ba285699b1b506492597df9e02a93ffbc1ef
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
 

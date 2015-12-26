@@ -16,6 +16,13 @@ class TableOfContentsSpec: QuickSpec {
       
     }
     
+    describe("Database") { () -> () in
+      
+      it("DB not nil", closure: { () -> () in
+        assert(KanjiBezierPathesHelper.db != nil)
+      })
+      
+    }
     
     describe("Kanji tests") {
       
