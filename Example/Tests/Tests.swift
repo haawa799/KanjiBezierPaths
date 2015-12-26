@@ -71,7 +71,7 @@ class TableOfContentsSpec: QuickSpec {
       it("院", closure: { () -> () in
         let pathes = KanjiBezierPathesHelper.pathesForKanji("院")
         expect(pathes) != nil
-        expect(pathes!.count) == 8
+        expect(pathes!.count) == 10
       })
       
     }
