@@ -1,9 +1,6 @@
 # KanjiBezierPaths
 
-[![CI Status](http://img.shields.io/travis/Andriy K./KanjiBezierPaths.svg?style=flat)](https://travis-ci.org/Andriy K./KanjiBezierPaths)
-[![Version](https://img.shields.io/cocoapods/v/KanjiBezierPaths.svg?style=flat)](http://cocoapods.org/pods/KanjiBezierPaths)
-[![License](https://img.shields.io/cocoapods/l/KanjiBezierPaths.svg?style=flat)](http://cocoapods.org/pods/KanjiBezierPaths)
-[![Platform](https://img.shields.io/cocoapods/p/KanjiBezierPaths.svg?style=flat)](http://cocoapods.org/pods/KanjiBezierPaths)
+[![Build Status](https://www.bitrise.io/app/884f86ae51caa0e5.svg?token=pkG8G8yN-EpMMO-sFrrI5Q&branch=master)](https://www.bitrise.io/app/884f86ae51caa0e5)
 
 ## Usage
 
