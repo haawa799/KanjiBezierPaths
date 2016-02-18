@@ -9,8 +9,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = "8.0"
   s.source_files = 'Pod/Classes/**/*'
-  s.source = { :git => 'https://github.com/haawa799/KanjiBezierPaths.git',
-                :tag => spec.version }
   s.resource_bundles = {
     'KanjiBezierPaths' => ['Pod/Assets/*']
   }
