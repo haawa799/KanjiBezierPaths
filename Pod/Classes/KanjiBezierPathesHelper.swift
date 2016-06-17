@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AWSQLiteDB
+//import SQLite
 
 private class KanjiBundleSearch {}
 
@@ -25,26 +25,26 @@ public struct KanjiBezierPathesHelper {
     return nil
   }()
   
-  public static let db: SQLiteDB? = {
-    
-    guard let podBundle = podBundle else { return nil }
-    let path = podBundle.pathForResource("kanjDB", ofType: "db")
-    
-    let db = SQLiteDB(path: path)
-    return db
-    
-  }()
+//  public static let db: SQLiteDB? = {
+//    
+//    guard let podBundle = podBundle else { return nil }
+//    let path = podBundle.pathForResource("kanjDB", ofType: "db")
+//    
+//    let db = SQLiteDB(path: path)
+//    return db
+//    
+//  }()
   
   public static func pathesForKanji(kanji: String) -> [UIBezierPath]? {
     
-    guard let db = db else { return nil }
-    
-    let rows = db.query("SELECT * FROM KANJI WHERE ID == ?", parameters: kanji)
-    if let row = rows.first, let data = row["VALUE"]?.value?.data {
-      if let result = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [UIBezierPath] {
-        return result
-      }
-    }
+//    guard let db = db else { return nil }
+//    
+//    let rows = db.query("SELECT * FROM KANJI WHERE ID == ?", parameters: kanji)
+//    if let row = rows.first, let data = row["VALUE"]?.value?.data {
+//      if let result = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [UIBezierPath] {
+//        return result
+//      }
+//    }
     
     return nil
   }

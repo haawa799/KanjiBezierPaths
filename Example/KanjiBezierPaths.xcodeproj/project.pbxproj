@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3C662A25C350D3F0D87F2865 /* Pods_KanjiBezierPaths_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D67FDD7CF11DC2FCC924D4 /* Pods_KanjiBezierPaths_Example.framework */; };
+		4334AA6D1CB1B060007F96D1 /* 2032930D-33CB-32A9-8370-DEB9DE8944AB.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 4334AA691CB1B060007F96D1 /* 2032930D-33CB-32A9-8370-DEB9DE8944AB.bcsymbolmap */; };
+		4334AA6E1CB1B060007F96D1 /* A1FBEF9A-02BC-3D40-B548-A05279BE3319.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 4334AA6A1CB1B060007F96D1 /* A1FBEF9A-02BC-3D40-B548-A05279BE3319.bcsymbolmap */; };
+		4334AA6F1CB1B060007F96D1 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4334AA6B1CB1B060007F96D1 /* SQLite.framework */; };
+		4334AA701CB1B060007F96D1 /* SQLite.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 4334AA6C1CB1B060007F96D1 /* SQLite.framework.dSYM */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 		2191ACCDD1B6EEF95FED4288 /* Pods-KanjiBezierPaths_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Tests/Pods-KanjiBezierPaths_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		37ED1E22C5693EFF503CC92A /* Pods_KanjiBezierPaths_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanjiBezierPaths_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B90993671ED6B2DDFD468 /* Pods-KanjiBezierPaths_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4334AA691CB1B060007F96D1 /* 2032930D-33CB-32A9-8370-DEB9DE8944AB.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2032930D-33CB-32A9-8370-DEB9DE8944AB.bcsymbolmap"; sourceTree = "<group>"; };
+		4334AA6A1CB1B060007F96D1 /* A1FBEF9A-02BC-3D40-B548-A05279BE3319.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "A1FBEF9A-02BC-3D40-B548-A05279BE3319.bcsymbolmap"; sourceTree = "<group>"; };
+		4334AA6B1CB1B060007F96D1 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SQLite.framework; sourceTree = "<group>"; };
+		4334AA6C1CB1B060007F96D1 /* SQLite.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SQLite.framework.dSYM; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KanjiBezierPaths_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiBezierPaths_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4334AA6F1CB1B060007F96D1 /* SQLite.framework in Frameworks */,
 				3C662A25C350D3F0D87F2865 /* Pods_KanjiBezierPaths_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4334AA681CB1B060007F96D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4334AA691CB1B060007F96D1 /* 2032930D-33CB-32A9-8370-DEB9DE8944AB.bcsymbolmap */,
+				4334AA6A1CB1B060007F96D1 /* A1FBEF9A-02BC-3D40-B548-A05279BE3319.bcsymbolmap */,
+				4334AA6B1CB1B060007F96D1 /* SQLite.framework */,
+				4334AA6C1CB1B060007F96D1 /* SQLite.framework.dSYM */,
+			);
+			name = iOS;
+			path = ../Carthage/Build/iOS;
+			sourceTree = "<group>";
+		};
 		5BB5B2D2460D835603E8D36C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +102,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				4334AA681CB1B060007F96D1 /* iOS */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for KanjiBezierPaths */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -210,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -248,7 +270,10 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				4334AA701CB1B060007F96D1 /* SQLite.framework.dSYM in Resources */,
+				4334AA6E1CB1B060007F96D1 /* A1FBEF9A-02BC-3D40-B548-A05279BE3319.bcsymbolmap in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				4334AA6D1CB1B060007F96D1 /* 2032930D-33CB-32A9-8370-DEB9DE8944AB.bcsymbolmap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +448,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -491,6 +517,7 @@
 				INFOPLIST_FILE = KanjiBezierPaths/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -503,6 +530,7 @@
 				INFOPLIST_FILE = KanjiBezierPaths/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -522,6 +550,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanjiBezierPaths_Example.app/KanjiBezierPaths_Example";
 			};
@@ -538,6 +567,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanjiBezierPaths_Example.app/KanjiBezierPaths_Example";
 			};
