@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.authors     = { "Andriy Kharchyshyn" => "haawaplus@gmail.com" }
   s.requires_arc = true
   s.ios.deployment_target = "8.0"
+  s.tvos.deployment_target = "9.0"
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'KanjiBezierPaths' => ['Pod/Assets/*']
