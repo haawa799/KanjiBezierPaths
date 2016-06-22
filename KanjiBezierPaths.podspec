@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.tvos.deployment_target = "8.0"
   s.source_files = 'Pod/Classes/**/*'
-  s.source   = { :git => "https://github.com/haawa799/KanjiBezierPaths.git", :tag => "0.1.3" }
+  s.source   = { :git => "https://github.com/haawa799/KanjiBezierPaths.git", :tag => "0.1.4" }
   s.resource_bundles = {
     'KanjiBezierPaths' => ['Pod/Assets/*']
   }
