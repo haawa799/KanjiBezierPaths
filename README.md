@@ -1,6 +1,6 @@
 # KanjiBezierPaths
 
-[![Build Status](https://www.bitrise.io/app/884f86ae51caa0e5.svg?token=pkG8G8yN-EpMMO-sFrrI5Q&branch=master)](https://www.bitrise.io/app/884f86ae51caa0e5)
+[![Build Status](https://travis-ci.org/haawa799/KanjiBezierPaths.svg?branch=master)](https://travis-ci.org/haawa799/KanjiBezierPaths)
 
 ## Usage
 
