@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_project: KanjiBezierPath.xcworkspace
+xcode_workspace: KanjiBezierPath.xcworkspace
 xcode_scheme:
     - KanjiBezierPaths-iOS
     - KanjiBezierPaths-macOS
