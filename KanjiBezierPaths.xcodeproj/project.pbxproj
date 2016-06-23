@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4369AF051D1BB39100206A7B /* KanjiBezierPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4369AF041D1BB39100206A7B /* KanjiBezierPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4369AF0C1D1BB39100206A7B /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369AF021D1BB39100206A7B /* KanjiBezierPaths.framework */; };
+		4369AF3D1D1BB3F300206A7B /* KanjiBezierPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4369AF3C1D1BB3F300206A7B /* KanjiBezierPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4369AF441D1BB3F300206A7B /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369AF3A1D1BB3F300206A7B /* KanjiBezierPaths.framework */; };
+		4369AF591D1BB42400206A7B /* KanjiBezierPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4369AF581D1BB42400206A7B /* KanjiBezierPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4369AF601D1BB42400206A7B /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369AF561D1BB42400206A7B /* KanjiBezierPaths.framework */; };
+		436A3C1C1D1BC38B00A0214C /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A3C1B1D1BC38B00A0214C /* Tests.swift */; };
+		436A3C1D1D1BC38B00A0214C /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A3C1B1D1BC38B00A0214C /* Tests.swift */; };
+		436A3C1E1D1BC38B00A0214C /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A3C1B1D1BC38B00A0214C /* Tests.swift */; };
+		436A3C201D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A3C1F1D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift */; };
+		436A3C261D1BC69200A0214C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436A3C241D1BC65D00A0214C /* SQLite.framework */; };
+		436A3C291D1BC6D700A0214C /* SQLite.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 436A3C281D1BC6D700A0214C /* SQLite.framework.dSYM */; };
+		436A3C2C1D1BC72F00A0214C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436A3C2B1D1BC72F00A0214C /* SQLite.framework */; };
+		436A3C3C1D1BCA6D00A0214C /* kanjDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 436A3C231D1BC3B400A0214C /* kanjDB.db */; };
+		436A3C421D1BD14100A0214C /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 436A3C241D1BC65D00A0214C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		436A3C431D1BD20200A0214C /* kanjDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 436A3C231D1BC3B400A0214C /* kanjDB.db */; };
+		436A3C441D1BD20300A0214C /* kanjDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 436A3C231D1BC3B400A0214C /* kanjDB.db */; };
+		436A3C491D1BD56800A0214C /* KanjiBezierPathesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A3C1F1D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift */; };
+		436A3C4A1D1BD58900A0214C /* KanjiBezierPathesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A3C1F1D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift */; };
+		436A3C501D1BE03900A0214C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436A3C4F1D1BE03900A0214C /* SQLite.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4369AF0D1D1BB39100206A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4369AEE91D1BB33B00206A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4369AF011D1BB39100206A7B;
+			remoteInfo = "KanjiBezierPaths-iOS";
+		};
+		4369AF451D1BB3F300206A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4369AEE91D1BB33B00206A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4369AF391D1BB3F300206A7B;
+			remoteInfo = "KanjiBezierPaths-macOS";
+		};
+		4369AF611D1BB42400206A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4369AEE91D1BB33B00206A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4369AF551D1BB42400206A7B;
+			remoteInfo = "KanjiBezierPaths-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		436A3C271D1BC6BB00A0214C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				436A3C291D1BC6D700A0214C /* SQLite.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		436A3C411D1BD13100A0214C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				436A3C421D1BD14100A0214C /* SQLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4369AF021D1BB39100206A7B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369AF041D1BB39100206A7B /* KanjiBezierPaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiBezierPaths.h; sourceTree = "<group>"; };
+		4369AF061D1BB39100206A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4369AF0B1D1BB39100206A7B /* KanjiBezierPaths-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KanjiBezierPaths-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369AF121D1BB39100206A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4369AF3A1D1BB3F300206A7B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369AF3C1D1BB3F300206A7B /* KanjiBezierPaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiBezierPaths.h; sourceTree = "<group>"; };
+		4369AF3E1D1BB3F300206A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4369AF431D1BB3F300206A7B /* KanjiBezierPaths-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KanjiBezierPaths-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369AF4A1D1BB3F300206A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4369AF561D1BB42400206A7B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369AF581D1BB42400206A7B /* KanjiBezierPaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiBezierPaths.h; sourceTree = "<group>"; };
+		4369AF5A1D1BB42400206A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4369AF5F1D1BB42400206A7B /* KanjiBezierPaths-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KanjiBezierPaths-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369AF661D1BB42400206A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436A3C1B1D1BC38B00A0214C /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		436A3C1F1D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiBezierPathesHelper.swift; sourceTree = "<group>"; };
+		436A3C231D1BC3B400A0214C /* kanjDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = kanjDB.db; sourceTree = "<group>"; };
+		436A3C241D1BC65D00A0214C /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
+		436A3C281D1BC6D700A0214C /* SQLite.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SQLite.framework.dSYM; path = Carthage/Build/Mac/SQLite.framework.dSYM; sourceTree = "<group>"; };
+		436A3C2B1D1BC72F00A0214C /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		436A3C4F1D1BE03900A0214C /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/tvOS/SQLite.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4369AEFE1D1BB39100206A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C2C1D1BC72F00A0214C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF081D1BB39100206A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369AF0C1D1BB39100206A7B /* KanjiBezierPaths.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF361D1BB3F300206A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C261D1BC69200A0214C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF401D1BB3F300206A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369AF441D1BB3F300206A7B /* KanjiBezierPaths.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF521D1BB42400206A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C501D1BE03900A0214C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF5C1D1BB42400206A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369AF601D1BB42400206A7B /* KanjiBezierPaths.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4369AEE81D1BB33B00206A7B = {
+			isa = PBXGroup;
+			children = (
+				436A3C311D1BC7E300A0214C /* Dependencies */,
+				4369AF6D1D1BC34100206A7B /* Shared */,
+				4369AF6E1D1BC34100206A7B /* Tests */,
+				4369AF031D1BB39100206A7B /* KanjiBezierPaths-iOS */,
+				4369AF0F1D1BB39100206A7B /* KanjiBezierPaths-iOSTests */,
+				4369AF571D1BB42400206A7B /* KanjiBezierPaths-tvOS */,
+				4369AF631D1BB42400206A7B /* KanjiBezierPaths-tvOSTests */,
+				4369AF3B1D1BB3F300206A7B /* KanjiBezierPaths-macOS */,
+				4369AF471D1BB3F300206A7B /* KanjiBezierPaths-macOSTests */,
+				4369AEF31D1BB33B00206A7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4369AEF31D1BB33B00206A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF021D1BB39100206A7B /* KanjiBezierPaths.framework */,
+				4369AF0B1D1BB39100206A7B /* KanjiBezierPaths-iOSTests.xctest */,
+				4369AF3A1D1BB3F300206A7B /* KanjiBezierPaths.framework */,
+				4369AF431D1BB3F300206A7B /* KanjiBezierPaths-macOSTests.xctest */,
+				4369AF561D1BB42400206A7B /* KanjiBezierPaths.framework */,
+				4369AF5F1D1BB42400206A7B /* KanjiBezierPaths-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4369AF031D1BB39100206A7B /* KanjiBezierPaths-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF041D1BB39100206A7B /* KanjiBezierPaths.h */,
+				4369AF061D1BB39100206A7B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-iOS";
+			sourceTree = "<group>";
+		};
+		4369AF0F1D1BB39100206A7B /* KanjiBezierPaths-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF121D1BB39100206A7B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-iOSTests";
+			sourceTree = "<group>";
+		};
+		4369AF3B1D1BB3F300206A7B /* KanjiBezierPaths-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF3C1D1BB3F300206A7B /* KanjiBezierPaths.h */,
+				4369AF3E1D1BB3F300206A7B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-macOS";
+			sourceTree = "<group>";
+		};
+		4369AF471D1BB3F300206A7B /* KanjiBezierPaths-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF4A1D1BB3F300206A7B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-macOSTests";
+			sourceTree = "<group>";
+		};
+		4369AF571D1BB42400206A7B /* KanjiBezierPaths-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF581D1BB42400206A7B /* KanjiBezierPaths.h */,
+				4369AF5A1D1BB42400206A7B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-tvOS";
+			sourceTree = "<group>";
+		};
+		4369AF631D1BB42400206A7B /* KanjiBezierPaths-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4369AF661D1BB42400206A7B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-tvOSTests";
+			sourceTree = "<group>";
+		};
+		4369AF6D1D1BC34100206A7B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				436A3C231D1BC3B400A0214C /* kanjDB.db */,
+				436A3C1F1D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4369AF6E1D1BC34100206A7B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				436A3C1B1D1BC38B00A0214C /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		436A3C311D1BC7E300A0214C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				436A3C281D1BC6D700A0214C /* SQLite.framework.dSYM */,
+				436A3C4F1D1BE03900A0214C /* SQLite.framework */,
+				436A3C2B1D1BC72F00A0214C /* SQLite.framework */,
+				436A3C241D1BC65D00A0214C /* SQLite.framework */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4369AEFF1D1BB39100206A7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369AF051D1BB39100206A7B /* KanjiBezierPaths.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF371D1BB3F300206A7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369AF3D1D1BB3F300206A7B /* KanjiBezierPaths.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF531D1BB42400206A7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369AF591D1BB42400206A7B /* KanjiBezierPaths.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4369AF011D1BB39100206A7B /* KanjiBezierPaths-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4369AF131D1BB39100206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-iOS" */;
+			buildPhases = (
+				4369AEFD1D1BB39100206A7B /* Sources */,
+				4369AEFE1D1BB39100206A7B /* Frameworks */,
+				4369AEFF1D1BB39100206A7B /* Headers */,
+				4369AF001D1BB39100206A7B /* Resources */,
+				436A3C2D1D1BC75300A0214C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanjiBezierPaths-iOS";
+			productName = "KanjiBezierPaths-iOS";
+			productReference = 4369AF021D1BB39100206A7B /* KanjiBezierPaths.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4369AF0A1D1BB39100206A7B /* KanjiBezierPaths-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4369AF161D1BB39100206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-iOSTests" */;
+			buildPhases = (
+				4369AF071D1BB39100206A7B /* Sources */,
+				4369AF081D1BB39100206A7B /* Frameworks */,
+				4369AF091D1BB39100206A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4369AF0E1D1BB39100206A7B /* PBXTargetDependency */,
+			);
+			name = "KanjiBezierPaths-iOSTests";
+			productName = "KanjiBezierPaths-iOSTests";
+			productReference = 4369AF0B1D1BB39100206A7B /* KanjiBezierPaths-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4369AF391D1BB3F300206A7B /* KanjiBezierPaths-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4369AF4B1D1BB3F300206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOS" */;
+			buildPhases = (
+				4369AF351D1BB3F300206A7B /* Sources */,
+				4369AF361D1BB3F300206A7B /* Frameworks */,
+				4369AF371D1BB3F300206A7B /* Headers */,
+				4369AF381D1BB3F300206A7B /* Resources */,
+				436A3C271D1BC6BB00A0214C /* CopyFiles */,
+				436A3C411D1BD13100A0214C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanjiBezierPaths-macOS";
+			productName = "KanjiBezierPaths-macOS";
+			productReference = 4369AF3A1D1BB3F300206A7B /* KanjiBezierPaths.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4369AF421D1BB3F300206A7B /* KanjiBezierPaths-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4369AF4E1D1BB3F300206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOSTests" */;
+			buildPhases = (
+				4369AF3F1D1BB3F300206A7B /* Sources */,
+				4369AF401D1BB3F300206A7B /* Frameworks */,
+				4369AF411D1BB3F300206A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4369AF461D1BB3F300206A7B /* PBXTargetDependency */,
+			);
+			name = "KanjiBezierPaths-macOSTests";
+			productName = "KanjiBezierPaths-macOSTests";
+			productReference = 4369AF431D1BB3F300206A7B /* KanjiBezierPaths-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4369AF551D1BB42400206A7B /* KanjiBezierPaths-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4369AF671D1BB42400206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOS" */;
+			buildPhases = (
+				4369AF511D1BB42400206A7B /* Sources */,
+				4369AF521D1BB42400206A7B /* Frameworks */,
+				4369AF531D1BB42400206A7B /* Headers */,
+				4369AF541D1BB42400206A7B /* Resources */,
+				436A3C511D1BE04B00A0214C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanjiBezierPaths-tvOS";
+			productName = "KanjiBezierPaths-tvOS";
+			productReference = 4369AF561D1BB42400206A7B /* KanjiBezierPaths.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4369AF5E1D1BB42400206A7B /* KanjiBezierPaths-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4369AF6A1D1BB42400206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOSTests" */;
+			buildPhases = (
+				4369AF5B1D1BB42400206A7B /* Sources */,
+				4369AF5C1D1BB42400206A7B /* Frameworks */,
+				4369AF5D1D1BB42400206A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4369AF621D1BB42400206A7B /* PBXTargetDependency */,
+			);
+			name = "KanjiBezierPaths-tvOSTests";
+			productName = "KanjiBezierPaths-tvOSTests";
+			productReference = 4369AF5F1D1BB42400206A7B /* KanjiBezierPaths-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4369AEE91D1BB33B00206A7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = haawa;
+				TargetAttributes = {
+					4369AF011D1BB39100206A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4369AF0A1D1BB39100206A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4369AF391D1BB3F300206A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4369AF421D1BB3F300206A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4369AF551D1BB42400206A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4369AF5E1D1BB42400206A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4369AEEC1D1BB33B00206A7B /* Build configuration list for PBXProject "KanjiBezierPaths" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4369AEE81D1BB33B00206A7B;
+			productRefGroup = 4369AEF31D1BB33B00206A7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4369AF011D1BB39100206A7B /* KanjiBezierPaths-iOS */,
+				4369AF0A1D1BB39100206A7B /* KanjiBezierPaths-iOSTests */,
+				4369AF551D1BB42400206A7B /* KanjiBezierPaths-tvOS */,
+				4369AF5E1D1BB42400206A7B /* KanjiBezierPaths-tvOSTests */,
+				4369AF391D1BB3F300206A7B /* KanjiBezierPaths-macOS */,
+				4369AF421D1BB3F300206A7B /* KanjiBezierPaths-macOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4369AF001D1BB39100206A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C3C1D1BCA6D00A0214C /* kanjDB.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF091D1BB39100206A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF381D1BB3F300206A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C441D1BD20300A0214C /* kanjDB.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF411D1BB3F300206A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF541D1BB42400206A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C431D1BD20200A0214C /* kanjDB.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF5D1D1BB42400206A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		436A3C2D1D1BC75300A0214C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		436A3C511D1BE04B00A0214C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/SQLite.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4369AEFD1D1BB39100206A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C201D1BC3AA00A0214C /* KanjiBezierPathesHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF071D1BB39100206A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C1C1D1BC38B00A0214C /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF351D1BB3F300206A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C491D1BD56800A0214C /* KanjiBezierPathesHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF3F1D1BB3F300206A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C1E1D1BC38B00A0214C /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF511D1BB42400206A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C4A1D1BD58900A0214C /* KanjiBezierPathesHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4369AF5B1D1BB42400206A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436A3C1D1D1BC38B00A0214C /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4369AF0E1D1BB39100206A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4369AF011D1BB39100206A7B /* KanjiBezierPaths-iOS */;
+			targetProxy = 4369AF0D1D1BB39100206A7B /* PBXContainerItemProxy */;
+		};
+		4369AF461D1BB3F300206A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4369AF391D1BB3F300206A7B /* KanjiBezierPaths-macOS */;
+			targetProxy = 4369AF451D1BB3F300206A7B /* PBXContainerItemProxy */;
+		};
+		4369AF621D1BB42400206A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4369AF551D1BB42400206A7B /* KanjiBezierPaths-tvOS */;
+			targetProxy = 4369AF611D1BB42400206A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4369AEF81D1BB33B00206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4369AEF91D1BB33B00206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4369AF141D1BB39100206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-iOS";
+				PRODUCT_MODULE_NAME = KanjiBezierPaths;
+				PRODUCT_NAME = KanjiBezierPaths;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4369AF151D1BB39100206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-iOS";
+				PRODUCT_MODULE_NAME = KanjiBezierPaths;
+				PRODUCT_NAME = KanjiBezierPaths;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4369AF171D1BB39100206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KanjiBezierPaths-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4369AF181D1BB39100206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KanjiBezierPaths-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4369AF4C1D1BB3F300206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "KanjiBezierPaths-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOS";
+				PRODUCT_MODULE_NAME = KanjiBezierPaths;
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4369AF4D1D1BB3F300206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "KanjiBezierPaths-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOS";
+				PRODUCT_MODULE_NAME = KanjiBezierPaths;
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4369AF4F1D1BB3F300206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "KanjiBezierPaths-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4369AF501D1BB3F300206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "KanjiBezierPaths-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4369AF681D1BB42400206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOS";
+				PRODUCT_MODULE_NAME = KanjiBezierPaths;
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALID_ARCHS = "";
+			};
+			name = Debug;
+		};
+		4369AF691D1BB42400206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOS";
+				PRODUCT_MODULE_NAME = KanjiBezierPaths;
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALID_ARCHS = "";
+			};
+			name = Release;
+		};
+		4369AF6B1D1BB42400206A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		4369AF6C1D1BB42400206A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4369AEEC1D1BB33B00206A7B /* Build configuration list for PBXProject "KanjiBezierPaths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AEF81D1BB33B00206A7B /* Debug */,
+				4369AEF91D1BB33B00206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4369AF131D1BB39100206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AF141D1BB39100206A7B /* Debug */,
+				4369AF151D1BB39100206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4369AF161D1BB39100206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AF171D1BB39100206A7B /* Debug */,
+				4369AF181D1BB39100206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4369AF4B1D1BB3F300206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AF4C1D1BB3F300206A7B /* Debug */,
+				4369AF4D1D1BB3F300206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4369AF4E1D1BB3F300206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AF4F1D1BB3F300206A7B /* Debug */,
+				4369AF501D1BB3F300206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4369AF671D1BB42400206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AF681D1BB42400206A7B /* Debug */,
+				4369AF691D1BB42400206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4369AF6A1D1BB42400206A7B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4369AF6B1D1BB42400206A7B /* Debug */,
+				4369AF6C1D1BB42400206A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4369AEE91D1BB33B00206A7B /* Project object */;
+}
