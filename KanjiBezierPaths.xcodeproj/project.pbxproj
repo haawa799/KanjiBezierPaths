@@ -717,6 +717,7 @@
 				INFOPLIST_FILE = "KanjiBezierPaths-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-iOS";
 				PRODUCT_MODULE_NAME = KanjiBezierPaths;
 				PRODUCT_NAME = KanjiBezierPaths;
@@ -788,6 +789,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOS";
 				PRODUCT_MODULE_NAME = KanjiBezierPaths;
 				PRODUCT_NAME = KanjiBezierPaths;
@@ -871,6 +873,7 @@
 				INFOPLIST_FILE = "KanjiBezierPaths-tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOS";
 				PRODUCT_MODULE_NAME = KanjiBezierPaths;
 				PRODUCT_NAME = KanjiBezierPaths;
