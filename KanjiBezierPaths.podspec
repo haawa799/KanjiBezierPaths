@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'KanjiBezierPaths' => ['Pod/Assets/*']
   }
-  s.dependency "AWSQLiteDB"
+  s.dependency 'SQLite.swift', '~> 0.10.1'
 end

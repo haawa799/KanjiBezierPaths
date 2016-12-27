@@ -1,23 +1,19 @@
 PODS:
-  - AWSQLiteDB (0.1.2)
-  - KanjiBezierPaths (0.1.0):
-    - AWSQLiteDB
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
+  - KanjiBezierPaths (0.1.4):
+    - SQLite.swift (~> 0.10.1)
+  - SQLite.swift (0.10.1)
 
 DEPENDENCIES:
   - KanjiBezierPaths (from `../`)
-  - Nimble (= 3.0.0)
-  - Quick (~> 0.8.0)
 
 EXTERNAL SOURCES:
   KanjiBezierPaths:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AWSQLiteDB: 233c76f09d185268b77102860e4435773e93dbc1
-  KanjiBezierPaths: ea25ba285699b1b506492597df9e02a93ffbc1ef
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  KanjiBezierPaths: 0e305554ef2ee7c0a1f02616225b07e6b957af02
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 00b05c4ae13af79444cd93f63890a69f0df784f6
+
+COCOAPODS: 1.1.1

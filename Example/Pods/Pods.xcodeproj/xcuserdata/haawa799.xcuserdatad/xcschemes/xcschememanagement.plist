@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>KanjiBezierPaths-KanjiBezierPaths.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>KanjiBezierPaths.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-KanjiBezierPaths_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLite.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C07F18D74740EF7069AD54893636D33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26AE1E6BE0D82E21756A674C89ABD5CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F47624172259A63F3ACEC0D6D57AADB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC7BCB8036C40F308F138C3718BB530F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

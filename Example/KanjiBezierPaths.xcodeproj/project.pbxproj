@@ -13,27 +13,13 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B9F08402FFF00BA4B6A65334 /* Pods_KanjiBezierPaths_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ED1E22C5693EFF503CC92A /* Pods_KanjiBezierPaths_Tests.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = KanjiBezierPaths;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		13F72BA23AA976D77F19E77B /* Pods-KanjiBezierPaths_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Tests/Pods-KanjiBezierPaths_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		063365905B14F098BC2C83FD /* Pods-KanjiBezierPaths_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1879BFC526A6D6BFFE1C9DD3 /* KanjiBezierPaths.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KanjiBezierPaths.podspec; path = ../KanjiBezierPaths.podspec; sourceTree = "<group>"; };
-		1E690DCC77F7592F183E6CD8 /* Pods-KanjiBezierPaths_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2191ACCDD1B6EEF95FED4288 /* Pods-KanjiBezierPaths_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Tests/Pods-KanjiBezierPaths_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		37ED1E22C5693EFF503CC92A /* Pods_KanjiBezierPaths_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanjiBezierPaths_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E7B90993671ED6B2DDFD468 /* Pods-KanjiBezierPaths_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A1892805AD76E24914712E9 /* Pods-KanjiBezierPaths_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiBezierPaths_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KanjiBezierPaths_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiBezierPaths_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +27,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* KanjiBezierPaths_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjiBezierPaths_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7DEF79AEE23635CC96B6AAAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -55,14 +40,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C662A25C350D3F0D87F2865 /* Pods_KanjiBezierPaths_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F08402FFF00BA4B6A65334 /* Pods_KanjiBezierPaths_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* KanjiBezierPaths_Example.app */,
-				607FACE51AFB9204008FA782 /* KanjiBezierPaths_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,10 +127,8 @@
 		F861E266BCD0223DC02DE7CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E690DCC77F7592F183E6CD8 /* Pods-KanjiBezierPaths_Example.debug.xcconfig */,
-				3E7B90993671ED6B2DDFD468 /* Pods-KanjiBezierPaths_Example.release.xcconfig */,
-				2191ACCDD1B6EEF95FED4288 /* Pods-KanjiBezierPaths_Tests.debug.xcconfig */,
-				13F72BA23AA976D77F19E77B /* Pods-KanjiBezierPaths_Tests.release.xcconfig */,
+				063365905B14F098BC2C83FD /* Pods-KanjiBezierPaths_Example.debug.xcconfig */,
+				3A1892805AD76E24914712E9 /* Pods-KanjiBezierPaths_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -166,12 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KanjiBezierPaths_Example" */;
 			buildPhases = (
-				51E8AE5ABDDFF0916A202833 /* Check Pods Manifest.lock */,
+				51E8AE5ABDDFF0916A202833 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8C8DDDE7B6C72B1326BFC826 /* Embed Pods Frameworks */,
-				27A7BF31284DBE56DC4096A9 /* Copy Pods Resources */,
+				8C8DDDE7B6C72B1326BFC826 /* [CP] Embed Pods Frameworks */,
+				27A7BF31284DBE56DC4096A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,27 +155,6 @@
 			productName = KanjiBezierPaths;
 			productReference = 607FACD01AFB9204008FA782 /* KanjiBezierPaths_Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		607FACE41AFB9204008FA782 /* KanjiBezierPaths_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KanjiBezierPaths_Tests" */;
-			buildPhases = (
-				038D5A6A3869964F377693E6 /* Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				3E04A1D0E49A22F12D86C6AD /* Embed Pods Frameworks */,
-				9A6B9CDCF6359FCD4B219342 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = KanjiBezierPaths_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* KanjiBezierPaths_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -215,10 +168,6 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -236,7 +185,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* KanjiBezierPaths_Example */,
-				607FACE41AFB9204008FA782 /* KanjiBezierPaths_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,39 +200,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		038D5A6A3869964F377693E6 /* Check Pods Manifest.lock */ = {
+		27A7BF31284DBE56DC4096A9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		27A7BF31284DBE56DC4096A9 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,64 +218,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E04A1D0E49A22F12D86C6AD /* Embed Pods Frameworks */ = {
+		51E8AE5ABDDFF0916A202833 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanjiBezierPaths_Tests/Pods-KanjiBezierPaths_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		51E8AE5ABDDFF0916A202833 /* Check Pods Manifest.lock */ = {
+		8C8DDDE7B6C72B1326BFC826 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8C8DDDE7B6C72B1326BFC826 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanjiBezierPaths_Example/Pods-KanjiBezierPaths_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A6B9CDCF6359FCD4B219342 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanjiBezierPaths_Tests/Pods-KanjiBezierPaths_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -364,23 +260,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* KanjiBezierPaths_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -485,61 +365,27 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E690DCC77F7592F183E6CD8 /* Pods-KanjiBezierPaths_Example.debug.xcconfig */;
+			baseConfigurationReference = 063365905B14F098BC2C83FD /* Pods-KanjiBezierPaths_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KanjiBezierPaths/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E7B90993671ED6B2DDFD468 /* Pods-KanjiBezierPaths_Example.release.xcconfig */;
+			baseConfigurationReference = 3A1892805AD76E24914712E9 /* Pods-KanjiBezierPaths_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KanjiBezierPaths/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2191ACCDD1B6EEF95FED4288 /* Pods-KanjiBezierPaths_Tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanjiBezierPaths_Example.app/KanjiBezierPaths_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13F72BA23AA976D77F19E77B /* Pods-KanjiBezierPaths_Tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanjiBezierPaths_Example.app/KanjiBezierPaths_Example";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -560,15 +406,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KanjiBezierPaths_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

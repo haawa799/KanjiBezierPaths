@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AWSQLiteDB
+import SQLite
 
 private class KanjiBundleSearch {}
 
@@ -25,25 +25,42 @@ public struct KanjiBezierPathesHelper {
     return nil
   }()
   
-  public static let db: SQLiteDB? = {
+  public static let db: Connection? = {
+    guard
+      let podBundle = podBundle else { return nil }
+    let docsPath = podBundle.resourcePath!
+    let fileManager = NSFileManager.defaultManager()
     
-    guard let podBundle = podBundle else { return nil }
-    let path = podBundle.pathForResource("kanjDB", ofType: "db")
-    
-    let db = SQLiteDB(path: path)
+    do {
+      let docsArray = try fileManager.contentsOfDirectoryAtPath(docsPath)
+      print(docsArray)
+    } catch {
+      print(error)
+    }
+    let path = podBundle.pathForResource("kanjDB", ofType: "db")!
+    let db = try! Connection(path, readonly: true)
     return db
-    
   }()
   
   public static func pathesForKanji(kanji: String) -> [UIBezierPath]? {
     
     guard let db = db else { return nil }
     
-    let rows = db.query("SELECT * FROM KANJI WHERE ID == ?", parameters: kanji)
-    if let row = rows.first, let data = row["VALUE"]?.value?.data {
-      if let result = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [UIBezierPath] {
-        return result
-      }
+    let allKanji = Table("KANJI")
+    let id = Expression<String>("ID")
+    let value = Expression<NSData>("VALUE")
+    
+    do {
+      try db.prepare(allKanji)
+    } catch _ {
+      return nil
+    }
+    
+    guard let aKanji = Array(try! db.prepare("SELECT ID, VALUE FROM KANJI WHERE \"ID\" == \"\(kanji)\"")).first else { return nil }
+    guard let blob = aKanji[1] as? SQLite.Blob else { return nil }
+    let data = NSData(bytes: blob.bytes, length: blob.bytes.count * sizeof(UInt8))
+    if let result = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [UIBezierPath] {
+      return result
     }
     
     return nil
