@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		432933911EB60DBF0002FC9B /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933871EB60DBF0002FC9B /* KanjiBezierPaths.framework */; };
+		432933981EB60DBF0002FC9B /* KanjiBezierPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4329338A1EB60DBF0002FC9B /* KanjiBezierPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		432933A51EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432933A31EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift */; };
+		432933A91EB60E3F0002FC9B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A71EB60E3F0002FC9B /* Realm.framework */; };
+		432933AA1EB60E3F0002FC9B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A81EB60E3F0002FC9B /* RealmSwift.framework */; };
+		432933AF1EB60EAC0002FC9B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432933AD1EB60EA80002FC9B /* Tests.swift */; };
+		432933B01EB60ED40002FC9B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A71EB60E3F0002FC9B /* Realm.framework */; };
+		432933B11EB60ED40002FC9B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A81EB60E3F0002FC9B /* RealmSwift.framework */; };
+		432933C11EB613600002FC9B /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933B81EB613600002FC9B /* KanjiBezierPaths.framework */; };
+		432933C81EB613600002FC9B /* KanjiBezierPaths-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 432933BA1EB613600002FC9B /* KanjiBezierPaths-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		432933D11EB6138C0002FC9B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933CF1EB6138C0002FC9B /* Realm.framework */; };
+		432933D21EB6138C0002FC9B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933D01EB6138C0002FC9B /* RealmSwift.framework */; };
+		432933D51EB613DE0002FC9B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432933AD1EB60EA80002FC9B /* Tests.swift */; };
+		432933D61EB613E20002FC9B /* KanjiBezierPathesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432933A31EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift */; };
+		432933D71EB614150002FC9B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933CF1EB6138C0002FC9B /* Realm.framework */; };
+		432933D81EB614150002FC9B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933D01EB6138C0002FC9B /* RealmSwift.framework */; };
+		432933E81EB614B70002FC9B /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933DF1EB614B70002FC9B /* KanjiBezierPaths.framework */; };
+		432933F81EB614EA0002FC9B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933F61EB614EA0002FC9B /* Realm.framework */; };
+		432933F91EB614EA0002FC9B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933F71EB614EA0002FC9B /* RealmSwift.framework */; };
+		432933FA1EB615C20002FC9B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432933AD1EB60EA80002FC9B /* Tests.swift */; };
+		432933FB1EB616D10002FC9B /* KanjiBezierPaths-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 432933E11EB614B70002FC9B /* KanjiBezierPaths-macOS.h */; };
+		432933FD1EB616FC0002FC9B /* KanjiBezierPathesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432933A31EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift */; };
+		432933FE1EB617140002FC9B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933F61EB614EA0002FC9B /* Realm.framework */; };
+		432933FF1EB617140002FC9B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933F71EB614EA0002FC9B /* RealmSwift.framework */; };
+		432934021EB6200B0002FC9B /* kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = 432934011EB6200B0002FC9B /* kanji.realm */; };
+		432934031EB6200B0002FC9B /* kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = 432934011EB6200B0002FC9B /* kanji.realm */; };
+		432934041EB6200B0002FC9B /* kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = 432934011EB6200B0002FC9B /* kanji.realm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		432933921EB60DBF0002FC9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4329337E1EB60DBF0002FC9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 432933861EB60DBF0002FC9B;
+			remoteInfo = KanjiBezierPaths;
+		};
+		432933C21EB613600002FC9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4329337E1EB60DBF0002FC9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 432933B71EB613600002FC9B;
+			remoteInfo = "KanjiBezierPaths-tvOS";
+		};
+		432933E91EB614B70002FC9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4329337E1EB60DBF0002FC9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 432933DE1EB614B70002FC9B;
+			remoteInfo = "KanjiBezierPaths-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		432933871EB60DBF0002FC9B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4329338A1EB60DBF0002FC9B /* KanjiBezierPaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiBezierPaths.h; sourceTree = "<group>"; };
+		4329338B1EB60DBF0002FC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432933901EB60DBF0002FC9B /* KanjiBezierPathsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjiBezierPathsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		432933971EB60DBF0002FC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432933A31EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiBezierPathesHelper.swift; sourceTree = "<group>"; };
+		432933A71EB60E3F0002FC9B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		432933A81EB60E3F0002FC9B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		432933AD1EB60EA80002FC9B /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		432933B81EB613600002FC9B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		432933BA1EB613600002FC9B /* KanjiBezierPaths-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KanjiBezierPaths-tvOS.h"; sourceTree = "<group>"; };
+		432933BB1EB613600002FC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432933C01EB613600002FC9B /* KanjiBezierPaths-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KanjiBezierPaths-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		432933C71EB613600002FC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432933CF1EB6138C0002FC9B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/tvOS/Realm.framework; sourceTree = "<group>"; };
+		432933D01EB6138C0002FC9B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/tvOS/RealmSwift.framework; sourceTree = "<group>"; };
+		432933DF1EB614B70002FC9B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		432933E11EB614B70002FC9B /* KanjiBezierPaths-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KanjiBezierPaths-macOS.h"; sourceTree = "<group>"; };
+		432933E21EB614B70002FC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432933E71EB614B70002FC9B /* KanjiBezierPaths-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KanjiBezierPaths-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		432933EE1EB614B70002FC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432933F61EB614EA0002FC9B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		432933F71EB614EA0002FC9B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		432934011EB6200B0002FC9B /* kanji.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = kanji.realm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		432933831EB60DBF0002FC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933A91EB60E3F0002FC9B /* Realm.framework in Frameworks */,
+				432933AA1EB60E3F0002FC9B /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4329338D1EB60DBF0002FC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933911EB60DBF0002FC9B /* KanjiBezierPaths.framework in Frameworks */,
+				432933B01EB60ED40002FC9B /* Realm.framework in Frameworks */,
+				432933B11EB60ED40002FC9B /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933B41EB613600002FC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933D11EB6138C0002FC9B /* Realm.framework in Frameworks */,
+				432933D21EB6138C0002FC9B /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933BD1EB613600002FC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933C11EB613600002FC9B /* KanjiBezierPaths.framework in Frameworks */,
+				432933D71EB614150002FC9B /* Realm.framework in Frameworks */,
+				432933D81EB614150002FC9B /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933DB1EB614B70002FC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933F81EB614EA0002FC9B /* Realm.framework in Frameworks */,
+				432933F91EB614EA0002FC9B /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933E41EB614B70002FC9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933E81EB614B70002FC9B /* KanjiBezierPaths.framework in Frameworks */,
+				432933FE1EB617140002FC9B /* Realm.framework in Frameworks */,
+				432933FF1EB617140002FC9B /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4329337D1EB60DBF0002FC9B = {
+			isa = PBXGroup;
+			children = (
+				432933AC1EB60EA80002FC9B /* Tests */,
+				432933A11EB60E2F0002FC9B /* Shared */,
+				432933891EB60DBF0002FC9B /* KanjiBezierPaths */,
+				432933941EB60DBF0002FC9B /* KanjiBezierPathsTests */,
+				432933B91EB613600002FC9B /* KanjiBezierPaths-tvOS */,
+				432933C41EB613600002FC9B /* KanjiBezierPaths-tvOSTests */,
+				432933E01EB614B70002FC9B /* KanjiBezierPaths-macOS */,
+				432933EB1EB614B70002FC9B /* KanjiBezierPaths-macOSTests */,
+				432933881EB60DBF0002FC9B /* Products */,
+				432933A61EB60E3F0002FC9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		432933881EB60DBF0002FC9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				432933871EB60DBF0002FC9B /* KanjiBezierPaths.framework */,
+				432933901EB60DBF0002FC9B /* KanjiBezierPathsTests.xctest */,
+				432933B81EB613600002FC9B /* KanjiBezierPaths.framework */,
+				432933C01EB613600002FC9B /* KanjiBezierPaths-tvOSTests.xctest */,
+				432933DF1EB614B70002FC9B /* KanjiBezierPaths.framework */,
+				432933E71EB614B70002FC9B /* KanjiBezierPaths-macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		432933891EB60DBF0002FC9B /* KanjiBezierPaths */ = {
+			isa = PBXGroup;
+			children = (
+				4329338A1EB60DBF0002FC9B /* KanjiBezierPaths.h */,
+				4329338B1EB60DBF0002FC9B /* Info.plist */,
+			);
+			path = KanjiBezierPaths;
+			sourceTree = "<group>";
+		};
+		432933941EB60DBF0002FC9B /* KanjiBezierPathsTests */ = {
+			isa = PBXGroup;
+			children = (
+				432933971EB60DBF0002FC9B /* Info.plist */,
+			);
+			path = KanjiBezierPathsTests;
+			sourceTree = "<group>";
+		};
+		432933A11EB60E2F0002FC9B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				432934011EB6200B0002FC9B /* kanji.realm */,
+				432933A31EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		432933A61EB60E3F0002FC9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				432933F61EB614EA0002FC9B /* Realm.framework */,
+				432933F71EB614EA0002FC9B /* RealmSwift.framework */,
+				432933CF1EB6138C0002FC9B /* Realm.framework */,
+				432933D01EB6138C0002FC9B /* RealmSwift.framework */,
+				432933A71EB60E3F0002FC9B /* Realm.framework */,
+				432933A81EB60E3F0002FC9B /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		432933AC1EB60EA80002FC9B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				432933AD1EB60EA80002FC9B /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		432933B91EB613600002FC9B /* KanjiBezierPaths-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				432933BA1EB613600002FC9B /* KanjiBezierPaths-tvOS.h */,
+				432933BB1EB613600002FC9B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-tvOS";
+			sourceTree = "<group>";
+		};
+		432933C41EB613600002FC9B /* KanjiBezierPaths-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				432933C71EB613600002FC9B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-tvOSTests";
+			sourceTree = "<group>";
+		};
+		432933E01EB614B70002FC9B /* KanjiBezierPaths-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				432933E11EB614B70002FC9B /* KanjiBezierPaths-macOS.h */,
+				432933E21EB614B70002FC9B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-macOS";
+			sourceTree = "<group>";
+		};
+		432933EB1EB614B70002FC9B /* KanjiBezierPaths-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				432933EE1EB614B70002FC9B /* Info.plist */,
+			);
+			path = "KanjiBezierPaths-macOSTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		432933841EB60DBF0002FC9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933981EB60DBF0002FC9B /* KanjiBezierPaths.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933B51EB613600002FC9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933C81EB613600002FC9B /* KanjiBezierPaths-tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933DC1EB614B70002FC9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933FB1EB616D10002FC9B /* KanjiBezierPaths-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		432933861EB60DBF0002FC9B /* KanjiBezierPaths */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4329339B1EB60DBF0002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths" */;
+			buildPhases = (
+				432933821EB60DBF0002FC9B /* Sources */,
+				432933831EB60DBF0002FC9B /* Frameworks */,
+				432933841EB60DBF0002FC9B /* Headers */,
+				432933851EB60DBF0002FC9B /* Resources */,
+				432933AB1EB60E4A0002FC9B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanjiBezierPaths;
+			productName = KanjiBezierPaths;
+			productReference = 432933871EB60DBF0002FC9B /* KanjiBezierPaths.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4329338F1EB60DBF0002FC9B /* KanjiBezierPathsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4329339E1EB60DBF0002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPathsTests" */;
+			buildPhases = (
+				4329338C1EB60DBF0002FC9B /* Sources */,
+				4329338D1EB60DBF0002FC9B /* Frameworks */,
+				4329338E1EB60DBF0002FC9B /* Resources */,
+				432933B21EB60EF30002FC9B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				432933931EB60DBF0002FC9B /* PBXTargetDependency */,
+			);
+			name = KanjiBezierPathsTests;
+			productName = KanjiBezierPathsTests;
+			productReference = 432933901EB60DBF0002FC9B /* KanjiBezierPathsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		432933B71EB613600002FC9B /* KanjiBezierPaths-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432933C91EB613600002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOS" */;
+			buildPhases = (
+				432933B31EB613600002FC9B /* Sources */,
+				432933B41EB613600002FC9B /* Frameworks */,
+				432933B51EB613600002FC9B /* Headers */,
+				432933B61EB613600002FC9B /* Resources */,
+				432933D31EB613980002FC9B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanjiBezierPaths-tvOS";
+			productName = "KanjiBezierPaths-tvOS";
+			productReference = 432933B81EB613600002FC9B /* KanjiBezierPaths.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		432933BF1EB613600002FC9B /* KanjiBezierPaths-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432933CC1EB613600002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOSTests" */;
+			buildPhases = (
+				432933BC1EB613600002FC9B /* Sources */,
+				432933BD1EB613600002FC9B /* Frameworks */,
+				432933BE1EB613600002FC9B /* Resources */,
+				432933D41EB613C40002FC9B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				432933C31EB613600002FC9B /* PBXTargetDependency */,
+			);
+			name = "KanjiBezierPaths-tvOSTests";
+			productName = "KanjiBezierPaths-tvOSTests";
+			productReference = 432933C01EB613600002FC9B /* KanjiBezierPaths-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		432933DE1EB614B70002FC9B /* KanjiBezierPaths-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432933F01EB614B70002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOS" */;
+			buildPhases = (
+				432933DA1EB614B70002FC9B /* Sources */,
+				432933DB1EB614B70002FC9B /* Frameworks */,
+				432933DC1EB614B70002FC9B /* Headers */,
+				432933DD1EB614B70002FC9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanjiBezierPaths-macOS";
+			productName = "KanjiBezierPaths-macOS";
+			productReference = 432933DF1EB614B70002FC9B /* KanjiBezierPaths.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		432933E61EB614B70002FC9B /* KanjiBezierPaths-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432933F31EB614B70002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOSTests" */;
+			buildPhases = (
+				432933E31EB614B70002FC9B /* Sources */,
+				432933E41EB614B70002FC9B /* Frameworks */,
+				432933E51EB614B70002FC9B /* Resources */,
+				432934001EB617290002FC9B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				432933EA1EB614B70002FC9B /* PBXTargetDependency */,
+			);
+			name = "KanjiBezierPaths-macOSTests";
+			productName = "KanjiBezierPaths-macOSTests";
+			productReference = 432933E71EB614B70002FC9B /* KanjiBezierPaths-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4329337E1EB60DBF0002FC9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "@haawa799";
+				TargetAttributes = {
+					432933861EB60DBF0002FC9B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					4329338F1EB60DBF0002FC9B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					432933B71EB613600002FC9B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					432933BF1EB613600002FC9B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					432933DE1EB614B70002FC9B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					432933E61EB614B70002FC9B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 432933811EB60DBF0002FC9B /* Build configuration list for PBXProject "KanjiBezierPaths" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4329337D1EB60DBF0002FC9B;
+			productRefGroup = 432933881EB60DBF0002FC9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				432933861EB60DBF0002FC9B /* KanjiBezierPaths */,
+				4329338F1EB60DBF0002FC9B /* KanjiBezierPathsTests */,
+				432933B71EB613600002FC9B /* KanjiBezierPaths-tvOS */,
+				432933BF1EB613600002FC9B /* KanjiBezierPaths-tvOSTests */,
+				432933DE1EB614B70002FC9B /* KanjiBezierPaths-macOS */,
+				432933E61EB614B70002FC9B /* KanjiBezierPaths-macOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		432933851EB60DBF0002FC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432934021EB6200B0002FC9B /* kanji.realm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4329338E1EB60DBF0002FC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933B61EB613600002FC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432934031EB6200B0002FC9B /* kanji.realm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933BE1EB613600002FC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933DD1EB614B70002FC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432934041EB6200B0002FC9B /* kanji.realm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933E51EB614B70002FC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		432933AB1EB60E4A0002FC9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		432933B21EB60EF30002FC9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		432933D31EB613980002FC9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		432933D41EB613C40002FC9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/Realm.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		432934001EB617290002FC9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Realm.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		432933821EB60DBF0002FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933A51EB60E2F0002FC9B /* KanjiBezierPathesHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4329338C1EB60DBF0002FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933AF1EB60EAC0002FC9B /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933B31EB613600002FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933D61EB613E20002FC9B /* KanjiBezierPathesHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933BC1EB613600002FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933D51EB613DE0002FC9B /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933DA1EB614B70002FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933FD1EB616FC0002FC9B /* KanjiBezierPathesHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432933E31EB614B70002FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432933FA1EB615C20002FC9B /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		432933931EB60DBF0002FC9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 432933861EB60DBF0002FC9B /* KanjiBezierPaths */;
+			targetProxy = 432933921EB60DBF0002FC9B /* PBXContainerItemProxy */;
+		};
+		432933C31EB613600002FC9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 432933B71EB613600002FC9B /* KanjiBezierPaths-tvOS */;
+			targetProxy = 432933C21EB613600002FC9B /* PBXContainerItemProxy */;
+		};
+		432933EA1EB614B70002FC9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 432933DE1EB614B70002FC9B /* KanjiBezierPaths-macOS */;
+			targetProxy = 432933E91EB614B70002FC9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		432933991EB60DBF0002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4329339A1EB60DBF0002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4329339C1EB60DBF0002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = KanjiBezierPaths/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.KanjiBezierPaths;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4329339D1EB60DBF0002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = KanjiBezierPaths/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.KanjiBezierPaths;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4329339F1EB60DBF0002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = KanjiBezierPathsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.KanjiBezierPathsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		432933A01EB60DBF0002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = KanjiBezierPathsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.KanjiBezierPathsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		432933CA1EB613600002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOS";
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		432933CB1EB613600002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOS";
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		432933CD1EB613600002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		432933CE1EB613600002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		432933F11EB614B70002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "KanjiBezierPaths-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOS";
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		432933F21EB614B70002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "KanjiBezierPaths-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOS";
+				PRODUCT_NAME = KanjiBezierPaths;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		432933F41EB614B70002FC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		432933F51EB614B70002FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "KanjiBezierPaths-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.KanjiBezierPaths-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		432933811EB60DBF0002FC9B /* Build configuration list for PBXProject "KanjiBezierPaths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432933991EB60DBF0002FC9B /* Debug */,
+				4329339A1EB60DBF0002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4329339B1EB60DBF0002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4329339C1EB60DBF0002FC9B /* Debug */,
+				4329339D1EB60DBF0002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4329339E1EB60DBF0002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPathsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4329339F1EB60DBF0002FC9B /* Debug */,
+				432933A01EB60DBF0002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432933C91EB613600002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432933CA1EB613600002FC9B /* Debug */,
+				432933CB1EB613600002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432933CC1EB613600002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432933CD1EB613600002FC9B /* Debug */,
+				432933CE1EB613600002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432933F01EB614B70002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432933F11EB614B70002FC9B /* Debug */,
+				432933F21EB614B70002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432933F31EB614B70002FC9B /* Build configuration list for PBXNativeTarget "KanjiBezierPaths-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432933F41EB614B70002FC9B /* Debug */,
+				432933F51EB614B70002FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4329337E1EB60DBF0002FC9B /* Project object */;
+}

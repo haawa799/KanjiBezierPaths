@@ -1,13 +1,22 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-script:
-- set -o pipefail && xcodebuild test -workspace Example/KanjiBezierPaths.xcworkspace -scheme KanjiBezierPaths-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+osx_image: xcode8.3
+xcode_project: KanjiBezierPaths.xcodeproj
+xcode_scheme:
+    - KanjiBezierPaths
+    - KanjiBezierPaths-macOS
+    - KanjiBezierPaths-tvOS
+xcode_sdk:
+    - iphonesimulator10.3
+    - macosx10.12
+    - tvos10.2
+matrix:
+     exclude:
+           - xcode_scheme: KanjiBezierPaths
+             xcode_sdk: macosx10.12
+             xcode_sdk: tvos10.2
+           - xcode_scheme: KanjiBezierPaths-macOS
+             xcode_sdk: iphonesimulator10.3
+             xcode_sdk: tvos10.2
+           - xcode_scheme: KanjiBezierPaths-tvOS
+             xcode_sdk: iphonesimulator10.3
+             xcode_sdk: macosx10.12
