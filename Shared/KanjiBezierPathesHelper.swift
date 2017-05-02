@@ -32,20 +32,19 @@ public class KanjiProvider {
     static let kanjiRealmFilename = "kanji"
     static let realmExtension = "realm"
     static let scheme: UInt64 = 6
-    
   }
-  
-  public init() {}
-  
+    
   public static let bundle: Bundle = {
     return Bundle(for: KanjiProvider.self)
   }()
   
-  let realm: Realm = {
+  public init() {
     Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: Constants.scheme, migrationBlock: nil)
     let bundleUrl = KanjiProvider.bundle.url(forResource: Constants.kanjiRealmFilename, withExtension: Constants.realmExtension)!
-    return try! Realm(fileURL: bundleUrl)
-  }()
+    realm = try? Realm(fileURL: bundleUrl)
+  }
+  
+  let realm: Realm!
   
   public func pathesForKanji(_ kanji: String) -> [BezierPath]? {
     guard let kanjiObj = realm.object(ofType: Kanji.self, forPrimaryKey: kanji) else { return nil }

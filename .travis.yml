@@ -1,22 +1,15 @@
 language: objective-c
 osx_image: xcode8.3
 xcode_project: KanjiBezierPaths.xcodeproj
-xcode_scheme:
-    - KanjiBezierPaths
-    - KanjiBezierPaths-macOS
-    - KanjiBezierPaths-tvOS
-xcode_sdk:
-    - iphonesimulator10.3
-    - macosx10.12
-    - tvos10.2
-matrix:
-     exclude:
-           - xcode_scheme: KanjiBezierPaths
-             xcode_sdk: macosx10.12
-             xcode_sdk: tvos10.2
-           - xcode_scheme: KanjiBezierPaths-macOS
-             xcode_sdk: iphonesimulator10.3
-             xcode_sdk: tvos10.2
-           - xcode_scheme: KanjiBezierPaths-tvOS
-             xcode_sdk: iphonesimulator10.3
-             xcode_sdk: macosx10.12
+env:
+  - ACTION=test  PLATFORM=macOS      SCHEME='KanjiBezierPaths-macOS'    DESTINATION='platform=OS X'
+  - ACTION=test  PLATFORM=iOS        SCHEME='KanjiBezierPaths'          DESTINATION='platform=iOS Simulator,OS=10.3,name=iPhone SE'
+  - ACTION=test  PLATFORM=tvOS       SCHEME='KanjiBezierPaths-tvOS'     DESTINATION='platform=tvOS Simulator,OS=10.2,name=Apple TV 1080p'
+
+install:
+  - carthage bootstrap --platform $PLATFORM
+
+script:
+  - set -o pipefail && xcodebuild -scheme "$SCHEME" -destination "$DESTINATION" clean $ACTION | xcpretty
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
