@@ -39,10 +39,15 @@ public class KanjiProvider {
   }()
   
     public init(appDocumentsURL: URL, fileManager: FileManager) {
-    let appURL = appDocumentsURL.appendingPathComponent("\(Constants.kanjiRealmFilename).\(Constants.realmExtension)")
+    var appURL = appDocumentsURL.appendingPathComponent("\(Constants.kanjiRealmFilename).\(Constants.realmExtension)")
     let bundleUrl = KanjiProvider.bundle.url(forResource: Constants.kanjiRealmFilename, withExtension: Constants.realmExtension)!
     if (try? Data(contentsOf: appURL)) == nil {
-        try! fileManager.copyItem(at: bundleUrl, to: appURL)
+        do {
+            try fileManager.copyItem(at: bundleUrl, to: appURL)
+        } catch {
+            appURL = bundleUrl
+            debugPrint(error)
+        }
     }
     Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: Constants.scheme, migrationBlock: nil)
     realm = try? Realm(fileURL: appURL)

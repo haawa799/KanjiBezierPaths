@@ -34,16 +34,6 @@
 		432934021EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = 432934011EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm */; };
 		432934031EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = 432934011EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm */; };
 		432934041EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = 432934011EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm */; };
-		5D9C1DA31ECC7F0B00D42ABA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A71EB60E3F0002FC9B /* Realm.framework */; };
-		5D9C1DA41ECC7F0B00D42ABA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A71EB60E3F0002FC9B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D9C1DA51ECC7F0B00D42ABA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A81EB60E3F0002FC9B /* RealmSwift.framework */; };
-		5D9C1DA61ECC7F0B00D42ABA /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 432933A81EB60E3F0002FC9B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D9C1DA81ECC7F5500D42ABA /* KanjiBezierPaths.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 432933871EB60DBF0002FC9B /* KanjiBezierPaths.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DF2D86B1ECC7D1D00D209A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2D86A1ECC7D1D00D209A1 /* AppDelegate.swift */; };
-		5DF2D86D1ECC7D1D00D209A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2D86C1ECC7D1D00D209A1 /* ViewController.swift */; };
-		5DF2D8701ECC7D1D00D209A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2D86E1ECC7D1D00D209A1 /* Main.storyboard */; };
-		5DF2D8721ECC7D1D00D209A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2D8711ECC7D1D00D209A1 /* Assets.xcassets */; };
-		5DF2D8751ECC7D1D00D209A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2D8731ECC7D1D00D209A1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,30 +58,7 @@
 			remoteGlobalIDString = 432933DE1EB614B70002FC9B;
 			remoteInfo = "KanjiBezierPaths-macOS";
 		};
-		5D9C1DA01ECC7E5D00D42ABA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4329337E1EB60DBF0002FC9B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 432933861EB60DBF0002FC9B;
-			remoteInfo = KanjiBezierPaths;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5D9C1DA71ECC7F0B00D42ABA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5D9C1DA81ECC7F5500D42ABA /* KanjiBezierPaths.framework in Embed Frameworks */,
-				5D9C1DA61ECC7F0B00D42ABA /* RealmSwift.framework in Embed Frameworks */,
-				5D9C1DA41ECC7F0B00D42ABA /* Realm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		432933871EB60DBF0002FC9B /* KanjiBezierPaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KanjiBezierPaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +85,6 @@
 		432933F61EB614EA0002FC9B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
 		432933F71EB614EA0002FC9B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		432934011EB6200B0002FC9B /* KanjiBezierPaths_kanji.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = KanjiBezierPaths_kanji.realm; sourceTree = "<group>"; };
-		5DF2D8681ECC7D1D00D209A1 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DF2D86A1ECC7D1D00D209A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DF2D86C1ECC7D1D00D209A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DF2D86F1ECC7D1D00D209A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5DF2D8711ECC7D1D00D209A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5DF2D8741ECC7D1D00D209A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5DF2D8761ECC7D1D00D209A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,15 +145,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DF2D8651ECC7D1D00D209A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D9C1DA51ECC7F0B00D42ABA /* RealmSwift.framework in Frameworks */,
-				5D9C1DA31ECC7F0B00D42ABA /* Realm.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -208,7 +159,6 @@
 				432933C41EB613600002FC9B /* KanjiBezierPaths-tvOSTests */,
 				432933E01EB614B70002FC9B /* KanjiBezierPaths-macOS */,
 				432933EB1EB614B70002FC9B /* KanjiBezierPaths-macOSTests */,
-				5DF2D8691ECC7D1D00D209A1 /* Example */,
 				432933881EB60DBF0002FC9B /* Products */,
 				432933A61EB60E3F0002FC9B /* Frameworks */,
 			);
@@ -223,7 +173,6 @@
 				432933C01EB613600002FC9B /* KanjiBezierPaths-tvOSTests.xctest */,
 				432933DF1EB614B70002FC9B /* KanjiBezierPaths.framework */,
 				432933E71EB614B70002FC9B /* KanjiBezierPaths-macOSTests.xctest */,
-				5DF2D8681ECC7D1D00D209A1 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,19 +256,6 @@
 				432933EE1EB614B70002FC9B /* Info.plist */,
 			);
 			path = "KanjiBezierPaths-macOSTests";
-			sourceTree = "<group>";
-		};
-		5DF2D8691ECC7D1D00D209A1 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				5DF2D86A1ECC7D1D00D209A1 /* AppDelegate.swift */,
-				5DF2D86C1ECC7D1D00D209A1 /* ViewController.swift */,
-				5DF2D86E1ECC7D1D00D209A1 /* Main.storyboard */,
-				5DF2D8711ECC7D1D00D209A1 /* Assets.xcassets */,
-				5DF2D8731ECC7D1D00D209A1 /* LaunchScreen.storyboard */,
-				5DF2D8761ECC7D1D00D209A1 /* Info.plist */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,26 +401,6 @@
 			productReference = 432933E71EB614B70002FC9B /* KanjiBezierPaths-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5DF2D8671ECC7D1D00D209A1 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5DF2D8791ECC7D1D00D209A1 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				5DF2D8641ECC7D1D00D209A1 /* Sources */,
-				5DF2D8651ECC7D1D00D209A1 /* Frameworks */,
-				5DF2D8661ECC7D1D00D209A1 /* Resources */,
-				5D9C1DA21ECC7EE200D42ABA /* ShellScript */,
-				5D9C1DA71ECC7F0B00D42ABA /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5D9C1DA11ECC7E5D00D42ABA /* PBXTargetDependency */,
-			);
-			name = Example;
-			productName = Example;
-			productReference = 5DF2D8681ECC7D1D00D209A1 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -519,11 +435,6 @@
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
-					5DF2D8671ECC7D1D00D209A1 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = S55BP53VB8;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 432933811EB60DBF0002FC9B /* Build configuration list for PBXProject "KanjiBezierPaths" */;
@@ -545,7 +456,6 @@
 				432933BF1EB613600002FC9B /* KanjiBezierPaths-tvOSTests */,
 				432933DE1EB614B70002FC9B /* KanjiBezierPaths-macOS */,
 				432933E61EB614B70002FC9B /* KanjiBezierPaths-macOSTests */,
-				5DF2D8671ECC7D1D00D209A1 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -593,16 +503,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5DF2D8661ECC7D1D00D209A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DF2D8751ECC7D1D00D209A1 /* LaunchScreen.storyboard in Resources */,
-				5DF2D8721ECC7D1D00D209A1 /* Assets.xcassets in Resources */,
-				5DF2D8701ECC7D1D00D209A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,21 +584,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		5D9C1DA21ECC7EE200D42ABA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -750,15 +635,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DF2D8641ECC7D1D00D209A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DF2D86D1ECC7D1D00D209A1 /* ViewController.swift in Sources */,
-				5DF2D86B1ECC7D1D00D209A1 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -777,31 +653,7 @@
 			target = 432933DE1EB614B70002FC9B /* KanjiBezierPaths-macOS */;
 			targetProxy = 432933E91EB614B70002FC9B /* PBXContainerItemProxy */;
 		};
-		5D9C1DA11ECC7E5D00D42ABA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 432933861EB60DBF0002FC9B /* KanjiBezierPaths */;
-			targetProxy = 5D9C1DA01ECC7E5D00D42ABA /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5DF2D86E1ECC7D1D00D209A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DF2D86F1ECC7D1D00D209A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5DF2D8731ECC7D1D00D209A1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DF2D8741ECC7D1D00D209A1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		432933991EB60DBF0002FC9B /* Debug */ = {
@@ -1179,40 +1031,6 @@
 			};
 			name = Release;
 		};
-		5DF2D8771ECC7D1D00D209A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S55BP53VB8;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		5DF2D8781ECC7D1D00D209A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S55BP53VB8;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1275,15 +1093,6 @@
 			buildConfigurations = (
 				432933F41EB614B70002FC9B /* Debug */,
 				432933F51EB614B70002FC9B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5DF2D8791ECC7D1D00D209A1 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5DF2D8771ECC7D1D00D209A1 /* Debug */,
-				5DF2D8781ECC7D1D00D209A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
