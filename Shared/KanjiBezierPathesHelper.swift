@@ -29,7 +29,7 @@ public class KanjiProvider {
   
   private struct Constants {
     static let encodedBezierClass = "UIBezierPath"
-    static let kanjiRealmFilename = "kanji"
+    static let kanjiRealmFilename = "KanjiBezierPaths_kanji"
     static let realmExtension = "realm"
     static let scheme: UInt64 = 6
   }
@@ -38,10 +38,14 @@ public class KanjiProvider {
     return Bundle(for: KanjiProvider.self)
   }()
   
-  public init() {
-    Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: Constants.scheme, migrationBlock: nil)
+    public init(appDocumentsURL: URL, fileManager: FileManager) {
+    let appURL = appDocumentsURL.appendingPathComponent("\(Constants.kanjiRealmFilename).\(Constants.realmExtension)")
     let bundleUrl = KanjiProvider.bundle.url(forResource: Constants.kanjiRealmFilename, withExtension: Constants.realmExtension)!
-    realm = try? Realm(fileURL: bundleUrl)
+    if (try? Data(contentsOf: appURL)) == nil {
+        try! fileManager.copyItem(at: bundleUrl, to: appURL)
+    }
+    Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: Constants.scheme, migrationBlock: nil)
+    realm = try? Realm(fileURL: appURL)
   }
   
   let realm: Realm!
