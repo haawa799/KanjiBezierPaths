@@ -8,7 +8,9 @@ class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        helper = KanjiProvider()
+        guard let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else { return }
+        let url = URL(fileURLWithPath: path)
+        helper = KanjiProvider(appDocumentsURL: url, fileManager: FileManager.default)
     }
     
     func test1() {
