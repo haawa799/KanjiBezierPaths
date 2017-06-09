@@ -296,7 +296,6 @@
 				432933831EB60DBF0002FC9B /* Frameworks */,
 				432933841EB60DBF0002FC9B /* Headers */,
 				432933851EB60DBF0002FC9B /* Resources */,
-				432933AB1EB60E4A0002FC9B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -334,7 +333,6 @@
 				432933B41EB613600002FC9B /* Frameworks */,
 				432933B51EB613600002FC9B /* Headers */,
 				432933B61EB613600002FC9B /* Resources */,
-				432933D31EB613980002FC9B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -509,21 +507,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		432933AB1EB60E4A0002FC9B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		432933B21EB60EF30002FC9B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,21 +521,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		432933D31EB613980002FC9B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/tvOS/RealmSwift.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		432933D41EB613C40002FC9B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
