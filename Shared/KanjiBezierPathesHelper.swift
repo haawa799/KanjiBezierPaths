@@ -7,66 +7,60 @@
 //
 
 #if os(OSX)
-  import AppKit
-  public typealias BezierPath = NSBezierPath
+import AppKit
+public typealias BezierPath = NSBezierPath
 #else
-  import UIKit
-  public typealias BezierPath = UIBezierPath
+import UIKit
+public typealias BezierPath = UIBezierPath
 #endif
 
 import RealmSwift
 import Realm
 
 class Kanji: Object {
-  dynamic var id = ""
-  dynamic var data = Data()
-  override class func primaryKey() -> String? {
-    return "id"
-  }
+    @objc dynamic var id = ""
+    @objc dynamic var data = Data()
+    override class func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 public class KanjiProvider {
-  
-  private struct Constants {
-    static let encodedBezierClass = "UIBezierPath"
-    static let kanjiRealmFilename = "KanjiBezierPaths_kanji"
-    static let realmExtension = "realm"
-    static let scheme: UInt64 = 6
-  }
     
-  public static let bundle: Bundle = {
-    return Bundle(for: KanjiProvider.self)
-  }()
-  
-    public init(appDocumentsURL: URL, fileManager: FileManager) {
-    var appURL = appDocumentsURL.appendingPathComponent("\(Constants.kanjiRealmFilename).\(Constants.realmExtension)")
-    let bundleUrl = KanjiProvider.bundle.url(forResource: Constants.kanjiRealmFilename, withExtension: Constants.realmExtension)!
-    if (try? Data(contentsOf: appURL)) == nil {
-        do {
-            try fileManager.copyItem(at: bundleUrl, to: appURL)
-        } catch {
-            appURL = bundleUrl
-            debugPrint(error)
-        }
+    private struct Constants {
+        static let encodedBezierClass = "UIBezierPath"
+        static let kanjiRealmFilename = "KanjiBezierPaths_kanji"
+        static let realmExtension = "realm"
+        static let scheme: UInt64 = 6
     }
-    Realm.Configuration.defaultConfiguration = Realm.Configuration(schemaVersion: Constants.scheme, migrationBlock: nil)
-    realm = try? Realm(fileURL: appURL)
-  }
-  
-  let realm: Realm!
-  
-  public func pathesForKanji(_ kanji: String) -> [BezierPath]? {
-    guard let kanjiObj = realm.object(ofType: Kanji.self, forPrimaryKey: kanji) else { return nil }
-    let data = kanjiObj.data
-    #if os(OSX)
-      NSKeyedUnarchiver.setClass(BezierPath.self, forClassName: Constants.encodedBezierClass)
-    #endif
-    let result = NSKeyedUnarchiver.unarchiveObject(with: data)
-    return result as? [BezierPath]
-  }
-  
-  func allKanjiArray() -> [[BezierPath]] {
-    return realm.objects(Kanji.self).flatMap { pathesForKanji($0.id) }
-  }
-  
+    
+    public static let bundle: Bundle = {
+        return Bundle(for: KanjiProvider.self)
+    }()
+    
+    public init() throws {
+        let bundleUrl = KanjiProvider.bundle.url(forResource: Constants.kanjiRealmFilename, withExtension: Constants.realmExtension)!
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(readOnly: true,
+                                                                       schemaVersion: Constants.scheme,
+                                                                       migrationBlock: { _, _ in
+        })
+        realm = try Realm(fileURL: bundleUrl)
+    }
+    
+    let realm: Realm
+    
+    public func pathesForKanji(_ kanji: String) -> [BezierPath]? {
+        guard let kanjiObj = realm.object(ofType: Kanji.self, forPrimaryKey: kanji) else { return nil }
+        let data = kanjiObj.data
+        #if os(OSX)
+        NSKeyedUnarchiver.setClass(BezierPath.self, forClassName: Constants.encodedBezierClass)
+        #endif
+        let result = NSKeyedUnarchiver.unarchiveObject(with: data)
+        return result as? [BezierPath]
+    }
+    
+    func allKanjiArray() -> [[BezierPath]] {
+        return realm.objects(Kanji.self).compactMap { pathesForKanji($0.id) }
+    }
+    
 }

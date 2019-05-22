@@ -8,51 +8,53 @@ class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        guard let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else { return }
-        let url = URL(fileURLWithPath: path)
-        helper = KanjiProvider(appDocumentsURL: url, fileManager: FileManager.default)
+        do {
+            helper = try KanjiProvider()
+        } catch {
+            debugPrint(error)
+        }
     }
     
     func test1() {
         let pathes = helper.pathesForKanji("京")
         XCTAssert(pathes?.count == 8)
     }
-    
+
     func test2() {
         let pathes = helper.pathesForKanji("数")
         XCTAssert(pathes?.count == 13)
     }
-    
+
     func test3() {
         let pathes = helper.pathesForKanji("働")
         XCTAssert(pathes?.count == 13)
     }
-    
+
     func test4() {
         let pathes = helper.pathesForKanji("苦")
         XCTAssert(pathes?.count == 8)
     }
-    
+
     func test5() {
         let pathes = helper.pathesForKanji("指")
         XCTAssert(pathes?.count == 9)
     }
-    
+
     func test6() {
         let pathes = helper.pathesForKanji("郎")
         XCTAssert(pathes?.count == 9)
     }
-    
+
     func test7() {
         let pathes = helper.pathesForKanji("病")
         XCTAssert(pathes?.count == 10)
     }
-    
+
     func test8() {
         let pathes = helper.pathesForKanji("院")
         XCTAssert(pathes?.count == 10)
     }
-    
+
     func testAllKanji() {
         self.measure {
             let allKanji = self.helper.allKanjiArray()
@@ -61,21 +63,21 @@ class Tests: XCTestCase {
             }
         }
     }
-    
+
     func testRealmDB() {
         XCTAssertNotNil(helper.realm)
     }
-    
+
     func testDoesntExist() {
         let pathes = helper.pathesForKanji("A")
         XCTAssertNil(pathes)
     }
-    
+
     func testRealmKanji() {
         let kanji = Kanji()
         kanji.id = "病"
         kanji.data = Data()
-        
+
         XCTAssertEqual(kanji.id, "病")
         XCTAssertEqual(kanji.data.count, 0)
         XCTAssertEqual(Kanji.primaryKey(), "id")
