@@ -1,10 +1,10 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode10.2
 xcode_project: KanjiBezierPaths.xcodeproj
 env:
   - ACTION=test  PLATFORM=macOS      SCHEME='KanjiBezierPaths-macOS'    DESTINATION='platform=OS X'
-  - ACTION=test  PLATFORM=iOS        SCHEME='KanjiBezierPaths'          DESTINATION='platform=iOS Simulator,OS=10.3,name=iPhone SE'
-  - ACTION=test  PLATFORM=tvOS       SCHEME='KanjiBezierPaths-tvOS'     DESTINATION='platform=tvOS Simulator,OS=10.2,name=Apple TV 1080p'
+  - ACTION=test  PLATFORM=iOS        SCHEME='KanjiBezierPaths'          DESTINATION='platform=iOS Simulator,OS=12,name=iPhone 8'
+  - ACTION=test  PLATFORM=tvOS       SCHEME='KanjiBezierPaths-tvOS'     DESTINATION='platform=tvOS Simulator,OS=12,name=Apple TV 1080p'
 
 install:
   - carthage bootstrap --platform $PLATFORM
