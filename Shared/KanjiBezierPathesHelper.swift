@@ -52,6 +52,7 @@ public class KanjiProvider {
     public func pathesForKanji(_ kanji: String) -> [BezierPath]? {
         guard let kanjiObj = realm.object(ofType: Kanji.self, forPrimaryKey: kanji) else { return nil }
         let data = kanjiObj.data
+        
         #if os(OSX)
         NSKeyedUnarchiver.setClass(BezierPath.self, forClassName: Constants.encodedBezierClass)
         #endif

@@ -54,6 +54,11 @@ class Tests: XCTestCase {
         let pathes = helper.pathesForKanji("院")
         XCTAssert(pathes?.count == 10)
     }
+    
+    func test9() {
+        let pathes = helper.pathesForKanji("努")
+        XCTAssert(pathes!.count == 7)
+    }
 
     func testAllKanji() {
         self.measure {
